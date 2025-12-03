@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+<!-- ===== HERO SECTION ===== -->
+<header id="hero">
+
+    <video autoplay loop muted id="video-background">
+    <source src="images/orange-train-at-sunset.960x540.mp4" type="video/mp4">
+</video>
+
+
+    <nav class="navbar">
+        <span class="logo">My Personal Portfolio</span>
+
+        <ul class="nav-links">
+            <li><a href="#title">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-toggle" id="menu-button">☰</button>
+    </nav>
+
+    <!-- Rounded hero content -->
+    <div class="hero-wrapper">
+        <h1>Hello, I'm <span class="name-highlight">Alisha Phaiju</span></h1>
+        <p>A student learning web development & design.</p>
+    </div>
+
+</header>
+
+<!-- ===== PERSONAL INFO ===== -->
+<section id="title" class="title">
+    <h1>About me</h1>
+    <p>Hello! I'm a student studying at Herald College, Kathmandu. I am passionate about coding, design, and creativity. I enjoy designing websites.</p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">React</div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div id="projects-grid">
+        <div class="project-card">
+        <h3>Project 1</h3>
+        <img src="Images/html.png">
+        <p>A dark-themed web design course landing page featuring a promo section on the left and a login form on the right. Navigation and a search bar sit at the top. Description by you.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <img src="Images/me.png">
+            <p>A clean, modern responsive navigation bar design showing both desktop and mobile views. It features a blue header with menu links and a mobile slide-out menu, built using HTML, CSS, and JavaScript.</p>
+            </div>
+
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <img src="Images/ui.png">
+            <p>A creative illustration showing people interacting with mobile UI elements, icons, and tools, representing UX/UI design and mobile app development.</p>
+            </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+
+    <form id="contactForm" class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="success-message" style="display:none;">
+        Your information has been sent!
+    </p>
+
+</section>
+
+<footer>
+    © 2025 My Portfolio Workshop-2
+</footer>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
